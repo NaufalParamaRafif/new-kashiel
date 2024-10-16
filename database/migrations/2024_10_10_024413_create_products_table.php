@@ -18,7 +18,7 @@ return new class extends Migration
             $table->integer('stok');
             $table->unsignedBigInteger('category_id')->nullable();
 
-            $table->foreign('category_id')->references('id')->on('categories');
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('set null');
             $table->timestamps();
         });
     }

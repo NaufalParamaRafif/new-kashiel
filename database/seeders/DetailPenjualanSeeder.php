@@ -5,25 +5,25 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-use App\Models\ProdukTerjual;
+use App\Models\DetailPenjualan;
 
-class ProdukTerjualSeeder extends Seeder
+class DetailPenjualanSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        ProdukTerjual::create([
+        DetailPenjualan::create([
             'jumlah_produk' => 2,
-            'harga' => 1000.00,
+            'subtotal' => 1000.00,
             'produk_id' => 1,
             'penjualan_id' => 1,
         ]);
 
-        ProdukTerjual::create([
+        DetailPenjualan::create([
             'jumlah_produk' => 1,
-            'harga' => 150.00,
+            'subtotal' => 150.00,
             'produk_id' => 2,
             'penjualan_id' => 2,
         ]);

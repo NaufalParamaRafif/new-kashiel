@@ -43,7 +43,7 @@ class DatabaseSeeder extends Seeder
             ProductSeeder::class,
             PelangganSeeder::class,
             PenjualanSeeder::class,
-            ProdukTerjualSeeder::class,
+            DetailPenjualanSeeder::class,
         ]);
     }
 }
